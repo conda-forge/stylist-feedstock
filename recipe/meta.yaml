@@ -1,5 +1,5 @@
 {% set name = "stylist" %}
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e178164596e20e719a8b15963ad37369c85beec356a652314e878d8173da505d
+  sha256: 581bb33a86d7637cb54fcd8b3c572e52397d0dcb60d3c5fdb48755a6d88e566d
 
 build:
   entry_points:
     - stylist=stylist.__main__:main
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
