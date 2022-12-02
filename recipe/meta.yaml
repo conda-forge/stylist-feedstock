@@ -1,5 +1,5 @@
 {% set name = "stylist" %}
-{% set version = "0.2" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 581bb33a86d7637cb54fcd8b3c572e52397d0dcb60d3c5fdb48755a6d88e566d
+  sha256: 14d1a63806336499ff087e9b8263f29d60a077ab9f4b9cd14c211286e581152c
 
 build:
   entry_points:
