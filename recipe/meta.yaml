@@ -13,7 +13,7 @@ build:
   entry_points:
     - stylist=stylist.__main__:main
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
