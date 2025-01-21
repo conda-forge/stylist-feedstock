@@ -20,6 +20,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - fparser >=0.1.2
     - python >={{ python_min }}
@@ -49,4 +50,3 @@ extra:
     - MatthewHambley
     - allynt
     - mo-lucy-gordon
-
